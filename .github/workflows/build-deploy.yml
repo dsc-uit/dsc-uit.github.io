@@ -1,0 +1,25 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: use node v12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: install dependencies
+      run: yarn --frozen-lockfile
+    - name: build production
+      run: yarn build
+    - name: deploy to github pages 🚀
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
