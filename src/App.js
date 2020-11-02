@@ -16,6 +16,11 @@ const Row = styled.div`
   margin: auto;
   max-width: 500px;
   padding: 0 20px;
+  @media only screen and (max-width: 340px) {
+    & {
+      padding: 0 7px;
+    }
+  }
 `;
 
 const CountDownContainer = styled.div`
