@@ -9,6 +9,7 @@ import { SocialFooter } from './components/Footer/SocialFooter';
 const Container = styled.div`
   width: 100%;
   display: block;
+  padding-bottom: 20px;
 `;
 
 const Row = styled.div`
