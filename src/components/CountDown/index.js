@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 function diff(from, to) {
-  let seconds = Math.round((to.getTime() - from.getTime()) / 1000);
-  let minutes = Math.round(seconds / 60);
+  let seconds = Math.floor((to.getTime() - from.getTime()) / 1000);
+  let minutes = Math.floor(seconds / 60);
   seconds = seconds % 60;
-  let hours = Math.round(minutes / 60);
+  let hours = Math.floor(minutes / 60);
   minutes = minutes % 60;
-  const days = Math.round(hours / 24);
+  const days = Math.floor(hours / 24);
   hours = hours % 24;
   return [days, hours, minutes, seconds];
 }
