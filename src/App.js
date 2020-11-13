@@ -29,7 +29,7 @@ const CountDownContainer = styled.div`
 `;
 
 function App() {
-  const time = new Date(2020, 10, 14, 0, 0, 0);
+  const time = new Date(2020, 10, 18, 8, 30, 0);
   return (
     <React.Fragment>
       <Header />
