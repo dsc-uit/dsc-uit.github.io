@@ -29,7 +29,7 @@ const CountDownContainer = styled.div`
 `;
 
 function App() {
-  const time = new Date(2020, 10, 18, 8, 30, 0);
+  const time = new Date(2020, 10, 25, 8, 30, 0);
   return (
     <React.Fragment>
       <Header />
@@ -42,7 +42,7 @@ function App() {
             at <strong>University of Information Technology</strong>
           </p>
           <p className='text-center'>
-            on <strong>November 14, 2020</strong>
+            on <strong>November 25, 2020</strong>
           </p>
           <p className='text-center'>
             <UnderLine color='#fbe561'>coming soon</UnderLine>
